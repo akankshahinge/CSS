@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            border: 2px solid red; 
+            height: 200px;
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+
+        }
+        .box{
+            border: 4px solid blueviolet;
+            height: 200px;
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+        }
+        span{
+            border: 4px solid rgb(97, 208, 105);
+            height: 200px;
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .con{
+            border: 4px solid rgb(194, 22, 116); 
+            height: 300px;
+            width: 500px;
+            padding: 30px;
+            margin: 50px;
+            display:block
+        }
+        .ib{
+            border: 4px solid rgb(7, 195, 161); 
+            height: 300px;
+            width: 500px;
+            padding: 30px;
+            margin: 50px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Block Elemet (div, paragraph, h1)-->
+    <!--Block Elements are always on new line, they take space or width from left to right of viewport, but if we give custom height and width then it takes that, also it accepts custom padding and margin -->
+    <div>Welcome to Display Property Demo</div>
+    <div>Welcome to Display Property Demo Part Two</div>
+
+    <!--Box Sizing: border box, this will always maintain your box dimesions, its height and width will be same even if we add padding or margin. Content may sink but it will retain its dimensions after adding padding and margin. It is considered as best practice to add in css-->
+    <div class="box">
+        Welcome to box sizing
+    </div>
+
+    <!--Inline Element (span)-->
+    <!--Inline Elements are on same line(try to be on same line), they take space same as content so no custom height and width get applied, custom width and height are not applicable, padding and horizontal margin gets applied but vertical margin dont get applied-->
+    <span>
+        This is span 1
+    </span>
+    <span>
+        This is span 2
+    </span>
+    
+    <!--Inline to Block conversion-->
+    <span class="con">
+        This is conversion from inline to block
+    </span>
+
+    <!--Inline-Block, is one where there is inline element but will take also block feature of margin and padding. Here inline element will have inline feature and feature of padding and margin from block -->
+    <span class="ib">
+        This is feature of both, inline and block
+    </span>
+    <span class="ib">
+        This is feature of both, inline and block
+    </span>
+</body>
+</html>
