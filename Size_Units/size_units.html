@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Universal selector is set to padding and margin as zero, which is considered as best practice*/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /*here unit is given in percentage
+        child is 25% of parent element
+        */
+        .parent{
+            background-color: rgb(222, 180, 124);
+        }
+        .child{
+            background-color: rgb(147, 221, 221);
+            width: 25%;
+        }
+        /*Here dimensions are given in therms of viewport, width is 25% of viewport and height is also 25% of viewport*/
+        .container{
+            background-color: rgb(223, 174, 210);
+            width: 25vw; 
+            height: 25vh;
+        }
+        .em_parent{
+            font-size: 16px;
+        }
+        /*em means Relative to the font-size of the parent element (2em means 2 times the size of the current font of parent element)*/
+        .em_child{
+            font-size: 2em;
+        }
+        /*rem means Relative to font-size of the root element, by default root has 16px*/
+        .rem{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!--There are two types of dimensions - absolute and relative-->
+    <!--To make responsive website always make use of relative dimensions-->
+    <!--Pixel is relative-->
+    <!--here unit is given in percentage, child is 25% of parent element-->
+    <div class="parent">
+        <div class="child">
+            Welcome to Size Units in CSS
+        </div>
+    </div>
+
+    <!--Dimensions using viewport-->
+    <div class="container">
+        Welcome to Size Units - viewport dimensions in CSS
+    </div>
+
+    <!--Relative dimensions-->
+    <!--em means Relative to the font-size of the parent element (2em means 2 times the size of the current font of parent element)-->
+    <div class="em_parent">
+        <div class="em_child">This will be 2 times the current font size, ie 16*2=32</div>
+    </div>
+    <!--rem means Relative to font-size of the root element, by default root has 16px-->
+    <div class="rem">This will be 4 rem of root ie. 16*4 </div>
+
+</body>
+</html>
